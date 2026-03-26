@@ -212,7 +212,7 @@ html,body{width:100vw;height:100vh;overflow:hidden;background:var(--navy);font-f
 <div class="col-card"><div class="col-card-head" style="background:var(--blue)" data-i="s4Vid">▶ 天氣追蹤影音</div><div class="col-card-body">
 <div class="field"><div class="field-label" data-i="s4Src">資料來源</div><div class="field-value" style="font-family:var(--mono);font-size:clamp(11px,.85vw,14px)">/api/v1/videos/playlists?tag=weather_page</div><div class="field-value" data-i="s4SrcV">固定取最新 4 則，依 publishedAt DESC</div></div>
 <div class="field"><div class="field-label" data-i="s4Layout">版型</div><div class="field-value" data-i="s4LayoutV">1 大 3 小（follow video.md 4.1 節 B）</div></div>
-<div class="field"><div class="field-label" data-i="s4SectionTitle">區塊標題</div><div class="field-value" data-i="s4SectionV">直接用 API 回傳 playlist_name，不寫死</div></div>
+<div class="field"><div class="field-label" data-i="s4SectionTitle">區塊標題</div><div class="field-value" data-i="s4SectionV">直接用後台給的 Playlist 名稱，不寫死</div></div>
 <div class="field"><div class="field-label" data-i="s4Interact">互動</div><div class="field-value" data-i-html="s4InteractV">點影片 → /video/{id}?playlist={pid}<br>底部「看更多」→ /video?playlist={pid}</div></div>
 </div></div>
 <div class="col-card"><div class="col-card-head" style="background:var(--teal)" data-i="s4News">📰 氣象新聞列表</div><div class="col-card-body">
@@ -376,7 +376,7 @@ cu2Nav:'ClickUp: Privacy Mechanism',navWeather:'Weather →',
 s4Title:'Weather Page',s4Vid:'▶ Weather Video Section',s4Src:'Data Source',
 s4SrcV:'Latest 4 items, sorted by publishedAt DESC',
 s4Layout:'Layout',s4LayoutV:'1 large + 3 small (follow video.md §4.1 B)',
-s4SectionTitle:'Section Title',s4SectionV:'Use API-returned playlist_name directly, not hardcoded',
+s4SectionTitle:'Section Title',s4SectionV:'Use the Playlist name from CMS backend, not hardcoded',
 s4Interact:'Interaction',
 s4News:'📰 Weather News List',s4Card:'Card Spec',
 s4Load:'Load Mechanism',
